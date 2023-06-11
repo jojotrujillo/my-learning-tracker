@@ -6,7 +6,8 @@
   },
   // https://github.com/devcontainers/images/tree/main/src/typescript-node
   "forwardPorts": [
-    3000
+    3000,
+    6006
   ],
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "npm install",
