@@ -1,10 +1,11 @@
 {
-  "name": "my-learning-tracker",
-  // Visit https://containers.dev/ for Development Container reference
+  "//comment-1": "Visit https://containers.dev/ for Development Container reference",
+  "//comment-2": "Schema -> https://containers.dev/implementors/json_schema/",
+  "//comment-3": "JSON Reference -> https://containers.dev/implementors/json_reference/",
   "build": {
     "dockerfile": "Dockerfile"
   },
-  // https://github.com/devcontainers/images/tree/main/src/typescript-node
+  "name": "my-learning-tracker-v0",
   "forwardPorts": [
     3000
   ],
