@@ -1,0 +1,112 @@
+# Metadata
+FrontendMasters	[Full Stack for Front-End Engineers, v3 by Jem Young](https://frontendmasters.com/courses/fullstack-v3/)	Course
+
+## Notes
+
+### Course Notes
+
+https://github.com/FrontendMasters/fm-snippets/tree/main/fullstack-v3
+
+### Introduction
+
+[MERN Stack](https://www.mongodb.com/mern-stack)
+
+Full Stack Engineer definition according to Jem Young: "An engineer who can create and manage both the frontend and backend of an application."
+
+### Command Line
+
+Succint difference between a terminal and a shell, "A shell is a user interface for access to an operating system’s services. Most often the user interacts with the shell using a command-line interface (CLI). The terminal is a program that opens a graphical window and lets you interact with the shell." (http://www.it.uu.se/education/course/homepage/os/vt18/module-0/shell-and-terminal/)
+
+An interesting forum post on the differences between Vi and Vim: https://vi.stackexchange.com/questions/5514/biggest-differences-between-vim-and-vi
+
+This seems like a pretty insightful link on practicing with Vim: https://www.openvim.com/
+
+If editing shell config, don't forget to `source <shell config>` to reload config file. Bash's config is .bashrc; zsh's is .zshrc.
+
+### Server
+
+Objectives:
+
+What is a server
+
+A server is a type of computer that is designated to serve requests. Some servers are more specialized than others, for example, some have different chipsets that are more efficient and more costly. Servers also typically are available at ideally 100% availability.
+
+Cloud computing
+
+Pros: redundancy, scalability, 100% availability. Cloud computing is essentially renting space on someone else's datacenter. Cloud hosts typically use different methods for their software but some utilize virtualization and/or virtual machines.
+
+VPS
+
+VPS stands for virtual private server. Jem has us buy one on DigitalOcean which they refer to as "Droplets" for the course. Regions are a consideration because you'd want to choose a region nearby where either you are located if it's a development server or nearby to where your audience is.
+
+### Operating Systems
+
+Windows essentially only has Windows Server as a server environment while Unix-like OSes have different "distributions" or distros like Ubuntu and CentOS.
+
+OSes have lower-level architecture, the kernel, and the shell interacts with the kernel while the users interact with the shell.
+
+### SSH
+
+#### Hashing
+
+Hashing is taking input and running it through a mathematical function to produce a string of random characters. Sort of like encryption. Examples of these mathematical functions, or hashes are MD5, SHA1, and SHA256.
+
+Hackers use what's called rainbow tables to brute force guess many popular username/password combinations
+
+Salt is a random thing that could be used in the hashing process to make the hash that much more unguessable by introducing the randomness
+
+In Jem's opinion, the best form of encryption is a strong hashing function like sha256 combined with salts to produce gibberish that is uncrackable.
+
+<hr>
+
+SSH - Secure Socket Shell; consists of a public key that is meant to be sharable to the Internet, and private key. The keys act as the salt in hashing that enables one-way, strong encryption to any hashing function.
+
+It's best practice to login to servers with a non-root user
+
+## The Internet
+
+Objectives:
+
+How the Internet works
+
+There's a physical component and a software component. The physical component consists of Ethernet cables and network cards and fiber optic cables. Our desktop network cards send signals out either over-the-air via wireless Ethernet or through Ethernet cables. The signals travel through routers and Internet backbones to reach the destination.
+
+The software component is the tcp/ip layers. These consist of the different layers that handle requests/responses. They handle the packet data, transfer rates, and other metadata-related processes.
+
+Link to Cloudflare's Learning Center in case you're interested: https://www.cloudflare.com/learning/
+
+Buying a domain/Domain Name System
+
+Domain name servers are like big phone books that keep track of what IP addresses are associated with which domain names. This allows us to not have to remember IP addresses for popular websites.
+
+Putting it together
+
+Jem is helping us setup our new domain with our server on DigitalOcean and he walks us through how to update, reboot, add users, and user security best practices with our new server.
+
+## Security
+
+### Access Control
+
+### Securing Applications
+
+### Firewalls
+
+You could use nmap to inspect open ports. ufw is firewall software you could use to close open ports.
+
+### Permissions
+
+There's a little math involved with user permissions in Linux-based operating systems. Jem provides us a cheat sheet with how to "calculate" these file/folder permissions, pg. 149 in slide deck. Jem mentions permission integer values are octal, so base-8, hence `read` has a value of 4, `write` is 2, and `execute` is 1.
+
+### Updating Software
+
+Jem demonstrates for us how to configure the unattended-upgrades package to enable automatic, unattended upgrades on our server, pg. 151 in slide deck
+
+## Continuous Integration & Deployment
+
+### CI/CD
+
+Refer to pg. 154 in slide deck for a nice visual difference between Continuous Delivery and Continuous Deployment. Jem uses Netflix as an example by showing how they use [Spinnaker](https://spinnaker.io/) as their CI/CD platform of choice.
+
+### Cron & Shell Scripting
+
+Definitely leverage [Cronitor](https://crontab.guru/) as a reference for cron job editing.
