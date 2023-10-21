@@ -1,5 +1,0 @@
-Rust
-Microsoft Learn	Take your first steps with Rust	https://learn.microsoft.com/en-us/training/paths/rust-first-steps/	Learning Path
-Microsoft Learn	What is Rust	https://learn.microsoft.com/en-us/training/modules/rust-introduction/	Module
-Microsoft Learn Set up the Rust development environment	https://learn.microsoft.com/en-us/training/modules/rust-set-up-environment/	Module
-Microsoft Learn Create your first Rust program	https://learn.microsoft.com/en-us/training/modules/rust-create-program/	Module

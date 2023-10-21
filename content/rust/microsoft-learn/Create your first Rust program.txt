@@ -1,2 +1,0 @@
-Create your first Rust program
-Learning Objectives
