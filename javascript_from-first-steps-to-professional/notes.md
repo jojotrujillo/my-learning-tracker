@@ -32,6 +32,7 @@ We can easily write JavaScript in [Chrome's console](https://developer.chrome.co
 
 #### Miscellaneous
 ---
+
 ##### Just-in-time learning vs. just-in-case learning
 
 Just-in-case learning is the type of learning you received while receiving secondary education (jr. high or high school). It's a wide breadth of knowledge whereas just-in-time learning has more to do with seeking and receiving the necessary knowledge to perform a job or skill. For more info: https://lawsonblake.com/just-in-time-learning/.

@@ -1,4 +1,6 @@
 body {
+    background: url("./imgs/cc038006.png") repeat fixed;
+    background-color: #ff678d;
     display: flex;
     flex-wrap: wrap;
 
@@ -15,6 +17,7 @@ body {
     }
 
     table {
+        background-color: #FFF;
         border:1px solid #FF0000;
         border-collapse:collapse;
     }
